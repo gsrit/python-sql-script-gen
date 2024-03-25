@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+</head>
+<body>
+    <h2>Selected Date and Time ({{ selected_timezone }})</h2>
+    <p>{{ selected_datetime }}</p>
+
+    <h2>Generated SQL Script (UTC)</h2>
+    <pre>{{ sql_script }}</pre>
+    
+    <h2>Converted Date and Time</h2>
+    <p>{{ ist_datetime }}</p>
+    <p>{{ canada_datetime }}</p>
+    
+    <!-- Add a home button -->
+    <form action="/" method="get">
+        <button type="submit">Home</button>
+    </form>
+</body>
+</html>

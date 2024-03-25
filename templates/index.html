@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DateTime Selection</title>
+</head>
+<body>
+    <h2>Select Date and Time</h2>
+    <form action="/submit" method="post">
+        <label for="datetime">Date and Time:</label>
+        <input type="datetime-local" id="datetime" name="datetime" required><br><br>
+        <label for="timezone">Select Timezone:</label>
+        <select id="timezone" name="timezone">
+            <option value="US/Eastern">EST (US/Eastern)</option>
+            <option value="US/Central">CDT (US/Central)</option>
+            <option value="US/Mountain">MST (US/Mountain)</option>
+            <option value="US/Pacific">PDT (US/Pacific)</option>
+            <!-- Add other timezones as needed -->
+        </select><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
